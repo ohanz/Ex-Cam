@@ -64,7 +64,7 @@ export default function App() {
               type={cameraType}
               flashMode={flashMode}
               style={{flex: 1}}
-              ref={(r) => {
+              ref={(r: any) => {
                 camera = r
               }}
             >
@@ -89,9 +89,9 @@ export default function App() {
                     onPress={__handleFlashMode}
                     style={{
                       backgroundColor: flashMode === 'off' ? '#000' : '#fff',
-                      borderRadius: '50%',
+                      borderRadius: 50,
                       height: 25,
-                      width: 25
+                      width: 25,
                     }}
                   >
                     <Text
@@ -106,7 +106,7 @@ export default function App() {
                     onPress={__switchCamera}
                     style={{
                       marginTop: 20,
-                      borderRadius: '50%',
+                      borderRadius: 50,
                       height: 25,
                       width: 25
                     }}
